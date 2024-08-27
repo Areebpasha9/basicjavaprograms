@@ -6,7 +6,8 @@ public class armstrong {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter any number:");
         n = sc.nextInt();
-        num = n;
+        sc.close();
+        num = n;        
         for (; n != 0;) {
             k = n % 10;
             arm = arm + (k * k * k);

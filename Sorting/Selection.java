@@ -11,11 +11,11 @@ public class Selection {
     }
 
     public static void main(String[] args) {
-        int ar[] = { 1, 3, 2, 5, 4 };
+        int ar[] = {  3, 2, 5, 4,1 };
         for (int i = 0; i < ar.length; i++) {
             int smallest = i;
             for (int j = i + 1; j < ar.length; j++) {
-                if (ar[smallest] > ar[j]) {
+                if (ar[smallest] > ar[j]) { 
                     smallest = ar[j];
                 }
             }

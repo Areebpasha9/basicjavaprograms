@@ -2,7 +2,7 @@ package DSA;
 
 public class findduplicate {
     public static void main(String[] args) {
-        int ar[] = { 1, 2, 1, 3, 2, 4, 5, 2, 1, 6, 1 };
+        int ar[] = { 1, 2, 1, 3, 2, 4, 4, 4, 4, 5, 2, 1, 6, 1 };
         int i, j;
 
         for (i = 0; i < ar.length; i++) {
@@ -11,7 +11,7 @@ public class findduplicate {
             }
             boolean flag = false;
 
-            for (j = i + 1; j < ar.length; j++) {
+            for (j = i + 1; j < ar.length - 1; j++) {
                 if (ar[i] == ar[j]) {
                     ar[j] = -1;
                     flag = true;

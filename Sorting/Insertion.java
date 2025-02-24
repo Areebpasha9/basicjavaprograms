@@ -1,6 +1,8 @@
 package Sorting;
-
 import pattern.string.permut;
+
+//array is divided int 2 parts sorted | Unsorted
+//Sorted part gets bigger after every iteration 
 
 public class Insertion {
     public static void print(int arr[]){

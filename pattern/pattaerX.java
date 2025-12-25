@@ -10,7 +10,7 @@ public class pattaerX {
                     System.out.print("*");
                 }
                 else{
-                    System.err.print(" ");
+                    System.out.print(" ");
                 }
             }
             System.out.println();

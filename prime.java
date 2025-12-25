@@ -1,14 +1,14 @@
 public class prime {
     public static void main(String[] args) {
 
-        int num = 21, m = 0, flag = 1;
+        int num = 17, m = 0, flag = 1;
         m = num / 2;
 
         if (num == 0 || num == 1) {
             System.out.println("Not a prime number");
         } else {
             for (int i = 2; i <= m; i++) {
-                if (num % 2 == 0) {
+                if (num % i == 0) {
                     flag = 0;
                     break;
                 }

@@ -20,13 +20,13 @@ public class frequent {
   
         //Displays the frequency of each element present in array  
         System.out.println("---------------------------------------");  
-        System.out.println(" Element | Frequency");  
+        System.out.println(" Element || Frequency");  
         System.out.println("---------------------------------------");  
         for(int i = 0; i < fr.length; i++){  
             if(fr[i] != visited)  
                 System.out.println("    " + arr[i] + "    |    " + fr[i]);  
         }  
-        System.out.println("----------------------------------------");  
+        System.out.println("-------------------------------------");  
     }
     
 }

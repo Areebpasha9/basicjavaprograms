@@ -1,4 +1,4 @@
-package pattern.string;
+package Hash.string;
 
 public class permut {
 public static void findPermut(String str,String newStr){

@@ -1,5 +1,5 @@
 package Sorting;
-import pattern.string.permut;
+import Hash.string.permut;
 
 //array is divided int 2 parts sorted | Unsorted
 //Sorted part gets bigger after every iteration 

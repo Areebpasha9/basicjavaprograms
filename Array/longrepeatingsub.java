@@ -1,3 +1,4 @@
+package Array;
 import java.util.Arrays;
 
 public class longrepeatingsub {
@@ -19,7 +20,7 @@ public class longrepeatingsub {
                 break;
             }
         }
-        System.out.print(indx == 0 ? "" : s1.substring(0, indx));
+        System.out.print(indx == 0 ? "" : s2.substring(0, indx));
 
     }
 

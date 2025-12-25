@@ -1,3 +1,4 @@
+package Array;
 public class remDuplicasy {
     public static void main(String[] args) {
         int ar[] = { 1, 2, 2, 3, 3, 3, 4, 5 };

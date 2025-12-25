@@ -11,6 +11,7 @@ public class frequency {
             else{
                 map.put(ar[i], 1);
             }
+            
         }
         System.out.println(map);
     }

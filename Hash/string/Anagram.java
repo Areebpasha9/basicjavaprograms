@@ -1,4 +1,4 @@
-package pattern.string;
+package Hash.string;
 
 import java.util.Arrays;
 

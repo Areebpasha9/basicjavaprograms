@@ -1,20 +1,21 @@
-import java.util.HashSet;
+public class Demo {
 
-public class demo {
+    public static void dCode(String str){
+        StringBuilder sb=new StringBuilder();
 
-  public static void main(String[] args) {
-    int ar[] = { 1, 3, 2, 1, 4, 2, 1, 5 };
+        for(int i=0;i<str.length();i=i+2){
+            int count=Character.getNumericValue(str.charAt(i));
+            char ch=str.charAt(i+1);
 
-    HashSet<Integer> visited = new HashSet<>();
-    HashSet<Integer> duplicate = new HashSet<>();
-
-    for (int i : ar) {
-      if (!visited.add(i)) {
-        duplicate.add(i);
-
-      }
+            for(int j=0;j<count;j++){
+                sb.append(ch);
+            }
+        }
+        System.out.println(sb);
     }
-    System.out.println(visited);
-    System.err.println(duplicate);
-  }
+
+    public static void main(String[] args) {
+        String str="2a3b1b4d";
+        dCode(str);
+    }
 }

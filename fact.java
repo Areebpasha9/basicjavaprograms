@@ -1,15 +1,16 @@
 public class fact {
-    public static int getFact(int num) {
-        int factorial = 1;
-        for (; num > 0; num--) {
-            factorial = factorial * num;
-        }
-        return factorial;
-    }
 
     public static void main(String[] args) {
-        int num = 4;
-        int res = getFact(num);
-        System.out.println("Factoral of Number is :" + res);
+        int ar[] = { 1, 2, 3, 5, 6 };
+        int sum1 = 0, sum2 = 0;
+        for (int i = 0; i < ar.length; i++) {
+            sum1 += ar[i];
+        }
+
+        for (int i = 1; i <= 6; i++) {
+            sum2 += i;
+        }
+        int mis = sum2 - sum1;
+        System.out.println("Missing num is:" + mis);
     }
 }

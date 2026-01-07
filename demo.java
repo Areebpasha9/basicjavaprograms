@@ -1,21 +1,22 @@
+import java.util.HashSet;
+import java.util.Set;
+
 public class Demo {
+    static void getTwoSum(int ar[]){
+        int target=11;
+        Set<Integer> set=new HashSet<>();
 
-    public static void dCode(String str){
-        StringBuilder sb=new StringBuilder();
-
-        for(int i=0;i<str.length();i=i+2){
-            int count=Character.getNumericValue(str.charAt(i));
-            char ch=str.charAt(i+1);
-
-            for(int j=0;j<count;j++){
-                sb.append(ch);
+        for(int i:ar){
+            int compliment=target-i;
+            if (set.contains(compliment)) {
+                System.out.println(compliment+" "+i);
             }
+            set.add(i);
         }
-        System.out.println(sb);
     }
 
     public static void main(String[] args) {
-        String str="2a3b1b4d";
-        dCode(str);
+        int ar[]={1,4,2,5,3,6};
+        getTwoSum(ar);
     }
 }
